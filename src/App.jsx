@@ -29,13 +29,15 @@ function App() {
     <>
       <div>
         <h1>Count: {countone}</h1>
-        <h1>Other: {otherValue}</h1>
+        
         <h2>Expensive Calculation Result: {expensiveCalculation}</h2>
         <button onClick={() => setCount(countone + 1)}>Increment Count</button>
+        <button onClick={() => setCount((countone = 0))}>Reset</button>
+        <h1>Other: {otherValue}</h1>
         <button onClick={() => setOtherValue(otherValue + 1)}>
           Change Other Value
         </button>
-        <button onClick={() => setCount((countone = 0))}>Reset</button>
+        
         <button onClick={() => setOtherValue((otherValue = 0))}>
           ResetOther
         </button>
